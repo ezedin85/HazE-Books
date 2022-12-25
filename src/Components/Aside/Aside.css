@@ -1,0 +1,80 @@
+.aside{
+    background-color: #1c213e;
+    width: 15%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    padding: 20px;
+    text-align: center;
+}
+
+.logo h2{
+    line-height: 1.3rem;
+}
+
+.logo small{
+    position: relative;
+    bottom: 7px;
+    /* left: 50px; */
+    color: yellow;
+}
+
+.closeMenu{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.aside_links{
+    padding-top: 80px;
+}
+
+.aside_links a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-block-end: 30px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.aside_links a:hover{
+    opacity: .6;
+}
+
+.aside i{
+    font-size: 1.2rem;
+    margin-inline: 1em .2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .aside{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aside{
+        width: 23%;
+    }
+    .aside i{
+        margin-inline: .5em .2em;
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .aside{
+        display: none;
+        width : 40%;
+        z-index: 2;
+        position: fixed;
+    }
+
+    .closeMenu{
+        display: block;
+    }
+}

@@ -1,0 +1,36 @@
+.no_match{
+    background-color: #242a4c;
+    width: 85%;
+    border-top-left-radius: 50px;
+    padding: 60px 140px 40px 40px;
+}
+
+.no_match h1{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .no_match{
+        padding-right: 40px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .no_match{
+        padding-inline: 20px;
+        width: 77%;
+    }
+    .no_match h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .no_match{
+        width: 100%;
+        border-top-left-radius: 0;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,161 @@
+.detail{
+    overflow: hidden;
+    background-color: #242a4c;
+    width: 85%;
+    border-top-left-radius: 50px;
+    padding: 60px 140px 40px 40px;
+}
+
+.detail .detail_container{
+    animation: opening 1s;
+}
+
+@keyframes opening {
+    from{
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0%);
+    }
+}
+
+.go_back{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.go_back:hover{
+    opacity: .8;
+}
+
+.go_back i{
+    margin-right: 10px;
+}
+
+.book_detail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_detail{
+    width: 35%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.left_detail img{
+    width: 70%;
+}
+
+.right_detail{
+    width: 65%;
+    position: relative;
+    border: solid 2px rgba(112, 112, 112, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.rate{
+    position: absolute;
+    right: 10px;
+    border: #f3ca3d solid 2px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.author{
+    margin-block: 10px;
+    opacity: .8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.stars i{
+    margin-inline-end: 1px;
+}
+
+.rate_count{
+    margin-left: 15px;
+    font-size: .8rem;
+}
+
+.pages{
+    margin-block: 10px;
+    font-size: .8rem;
+}
+
+.book_accessability{
+    display: inline-block;
+    border: none;
+    background-color: aqua;
+    color: black;
+    font-size: .8rem;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.book_accessability:hover{
+    opacity: .9;
+}
+
+.description{
+    margin-top: 10px;
+    width: 80%;
+    font-size: .9rem;
+}
+
+.get_book{
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffaa59;
+    color: black;
+    text-decoration: none;
+    border-bottom-right-radius: 5px;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.get_book:hover{
+    opacity: .9;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .detail{
+        padding-right: 40px;
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .detail{
+        padding-inline: 20px;
+        width: 77%;
+    }
+
+    .book_detail{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .left_detail,
+    .right_detail{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .detail{
+        width: 100%;
+        border-top-left-radius: 0;
+        padding: 10px;
+    }
+}
