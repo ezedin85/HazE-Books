@@ -108,4 +108,12 @@
         border-top-left-radius: 0;
         padding: 10px;
     }
+    .book{
+        width: 260px;
+    }
+    
+    .book img{
+        height: 310px;
+    }
+
 }

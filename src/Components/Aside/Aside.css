@@ -6,27 +6,16 @@
     top: 0;
 }
 
-.logo{
-    padding: 20px;
-    text-align: center;
-}
-
-.logo h2{
-    line-height: 1.3rem;
-}
-
-.logo small{
-    position: relative;
-    bottom: 7px;
-    /* left: 50px; */
-    color: yellow;
-}
-
 .closeMenu{
     position: absolute;
     right: 10px;
     top: 10px;
     display: none;
+}
+
+.closeMenu i{
+    font-size: 2rem;
+    color: yellow;
 }
 
 .aside_links{
@@ -46,7 +35,7 @@
     opacity: .6;
 }
 
-.aside i{
+.aside_links i{
     font-size: 1.2rem;
     margin-inline: 1em .2em;
 }

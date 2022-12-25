@@ -16,11 +16,6 @@ export default function Aside(props) {
       
       <div onClick={hideMenu} className="closeMenu"><i className="fa-solid fa-xmark"></i></div>
       {/* <h1>{props.showMenu? 'got it':'got ittttt'}</h1> */}
-
-        <div className='logo'>
-          <h2>HazE Books..</h2>
-          <small>By Ezedin</small>
-        </div>
         <div className='aside_links'>
             <Link to="/" ><i className="fa-solid fa-house"></i> Home</Link>
             <Link to="/search" ><i className="fa-solid fa-magnifying-glass"></i> Discover</Link>

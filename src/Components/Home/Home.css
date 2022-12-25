@@ -147,4 +147,12 @@
         border-top-left-radius: 0;
         padding: 10px;
     }
+
+    .welcome_left,.welcome_right{
+        width: 100%;
+    }
+
+    .welcome_right img{
+        width: 100%;
+    }
 }
