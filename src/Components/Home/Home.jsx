@@ -52,11 +52,11 @@ export default function Home(props) {
                             <h2 className="book_name">{sample[0].volumeInfo.title}</h2>
                             <p className="autor">{sample[0].volumeInfo.authors}</p>
                             {sample[0].volumeInfo.averageRating && <div className="stars">
-                                    <i style={sample[0].volumeInfo.averageRating>=1?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[0].volumeInfo.averageRating>=2?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[0].volumeInfo.averageRating>=3?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[0].volumeInfo.averageRating>=4?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[0].volumeInfo.averageRating>=5?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
+                                    <i style={sample[0].volumeInfo.averageRating>=1?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[0].volumeInfo.averageRating>=2?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[0].volumeInfo.averageRating>=3?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[0].volumeInfo.averageRating>=4?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[0].volumeInfo.averageRating>=5?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
                                     <span className='rate_count'>({sample[0].volumeInfo.ratingsCount})</span>
                                 </div>}
                             <p className="book_description">{parse(sample[0].volumeInfo.description)}</p>
@@ -70,14 +70,14 @@ export default function Home(props) {
                             <h2 className="book_name">{sample[1].volumeInfo.title}</h2>
                             <p className="autor">{sample[0].volumeInfo.authors}</p>
                             {sample[1].volumeInfo.averageRating && <div className="stars">
-                                    <i style={sample[1].volumeInfo.averageRating>=1?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[1].volumeInfo.averageRating>=2?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[1].volumeInfo.averageRating>=3?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[1].volumeInfo.averageRating>=4?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={sample[1].volumeInfo.averageRating>=5?{color:'#f3ca3d'}:{color:'white'}} class="fa-solid fa-star"></i>
+                                    <i style={sample[1].volumeInfo.averageRating>=1?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[1].volumeInfo.averageRating>=2?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[1].volumeInfo.averageRating>=3?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[1].volumeInfo.averageRating>=4?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={sample[1].volumeInfo.averageRating>=5?{color:'#f3ca3d'}:{color:'white'}} className="fa-solid fa-star"></i>
                                     <span className='rate_count'>({sample[1].volumeInfo.ratingsCount})</span>
                                 </div>}
-                            <p className="book_description">{parse(sample[1].volumeInfo.description)}</p>
+                            <div className="book_description">{parse(sample[1].volumeInfo.description)}</div>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,6 @@ export default function Detail(props) {
         })
     },[])
 
-    book && console.log(book)
       return (
         <div className='detail'>
             <div className="detail_container">
@@ -35,25 +34,25 @@ export default function Detail(props) {
                     {book &&
                         <div className="book_detail">
                             <div className="left_detail">
-                                <img src={book.volumeInfo.imageLinks.thumbnail} alt="" />
+                                {book.volumeInfo.imageLinks? <img src={book.volumeInfo.imageLinks.thumbnail} alt="" /> : <i>img not found</i>}
                             </div>
                             <div className="right_detail">
                                 {book.volumeInfo.averageRating &&<p className='rate' style={{}}>{ `${book.volumeInfo.averageRating*20}%`}</p>}
                                 <h2 className='title'>{book.volumeInfo.title}</h2>
                                 <h4 className='author'>{book.volumeInfo.authors} | {book.volumeInfo.publishedDate}</h4>
                                 {book.volumeInfo.averageRating && <div className="stars">
-                                    <i style={book.volumeInfo.averageRating>=1?{color:'yellow'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={book.volumeInfo.averageRating>=2?{color:'yellow'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={book.volumeInfo.averageRating>=3?{color:'yellow'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={book.volumeInfo.averageRating>=4?{color:'yellow'}:{color:'white'}} class="fa-solid fa-star"></i>
-                                    <i style={book.volumeInfo.averageRating>=5?{color:'yellow'}:{color:'white'}} class="fa-solid fa-star"></i>
+                                    <i style={book.volumeInfo.averageRating>=1?{color:'yellow'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={book.volumeInfo.averageRating>=2?{color:'yellow'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={book.volumeInfo.averageRating>=3?{color:'yellow'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={book.volumeInfo.averageRating>=4?{color:'yellow'}:{color:'white'}} className="fa-solid fa-star"></i>
+                                    <i style={book.volumeInfo.averageRating>=5?{color:'yellow'}:{color:'white'}} className="fa-solid fa-star"></i>
                                     <span className='rate_count'>({book.volumeInfo.ratingsCount})</span>
                                 </div>}
                                 <p className='pages'>{book.volumeInfo.pageCount} pages</p>
                                 <a href={book.accessInfo.webReaderLink} target='_blank' className='book_accessability'>Web Reader</a>
                                 {book.accessInfo.pdf.isAvailable && <a href={book.accessInfo.pdf.acsTokenLink} target='_blank' className='book_accessability'>Pdf Avaliable</a>}
                                 {book.accessInfo.epub.isAvailable && <a className='book_accessability'>Ebup Avaliable</a>}
-                                <p className="description">{parse(book.volumeInfo.description)}</p>
+                                {book.volumeInfo.description && <div className="description">{parse(book.volumeInfo.description)}</div>}
                                 <a href={book.volumeInfo.previewLink} target='_blank' className='get_book'>Get the Book</a>
                             </div>
                         </div>

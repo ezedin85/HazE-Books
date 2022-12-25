@@ -12,7 +12,7 @@ export default function Search(props) {
 
     let {SearchBook} = useParams()
     //if user didn't put any word to search or navigats to this page using the discover link
-    SearchBook = SearchBook == 'undefined' || !SearchBook ? 'javascript' :SearchBook
+    SearchBook = SearchBook == 'undefined' || !SearchBook ? 'javaScript' :SearchBook
 
     useEffect(()=>{
         // axios.get(`https://www.googleapis.com/books/v1/volumes?q=${SearchBook}&key=AIzaSyB80LDCE5ACBHkfcaiz-Drv7d_xzVihkLk&maxResults=40`)
@@ -27,10 +27,11 @@ export default function Search(props) {
         <SearchForm setShowMenu={props.setShowMenu}/>
         <div className='books'>
         {
+
           mapped = result.map((book)=>{
             return <div className='book' key={book.id}>
-            <img src={book.volumeInfo.imageLinks.thumbnail} alt="not found"/>
-            <p>by {book.volumeInfo.authors}</p>
+            {book.volumeInfo.imageLinks? <img src={book.volumeInfo.imageLinks.thumbnail} alt="not found"/>:<i>img not found</i>}
+            <p>{book.volumeInfo.title}</p>
             <div className='see_detail'>
                 <Link to={`/detail/${book.id}`}>See Detail</Link>
             </div>
