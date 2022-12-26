@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://quranamharic.epizy.com",
+  "homepage": "http://ezedin85.github.io/HazE-Books",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.1",
-    "gh-pages": "^4.0.0",
     "google-map-react": "^2.2.0",
     "html-react-parser": "^3.0.4",
     "react": "^18.2.0",
@@ -25,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
