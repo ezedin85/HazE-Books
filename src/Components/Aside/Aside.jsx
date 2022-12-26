@@ -14,7 +14,7 @@ export default function Aside(props) {
   return (
     <div style={window.screen.width <= 480 ? sizeStyle: {}} className="aside">
       
-      <div onClick={hideMenu} h="closeMenu"><i className="fa-solid fa-xmark"></i></div>
+      <div onClick={hideMenu} class="closeMenu"><i className="fa-solid fa-xmark"></i></div>
       {/* <h1>{props.showMenu? 'got it':'got ittttt'}</h1> */}
 
         <div className='logo'>
