@@ -24,8 +24,8 @@ export default function Aside(props) {
         <div className='aside_links'>
             <Link to="/" ><i className="fa-solid fa-house"></i> Home</Link>
             <Link to="/search" ><i className="fa-solid fa-magnifying-glass"></i> Discover</Link>
-            <a href="mailto: ezedin38nuru@gmail.com" ><i className="fa-regular fa-envelope"></i> Contact</a>
-            <a href="http://ezedinnuru.epizy.com/" ><i className="fa-solid fa-laptop-code"></i> Developer</a>
+            <a href="mailto: ezedin85nuru@gmail.com" ><i className="fa-regular fa-envelope"></i> Contact</a>
+            <a href="mailto: ezedin85nuru@gmail.com" ><i className="fa-solid fa-laptop-code"></i> Developer</a>
             {/* <Link to="" ><i className="fa-solid fa-gear"></i> Settings</Link> */}
         </div>
     </div>
